@@ -1,2 +1,2 @@
 # Questionary
-Questionary Test Task
+Описание тестового задания находится в файле Test Task Description.pdf

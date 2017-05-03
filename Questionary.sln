@@ -21,6 +21,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Common", "4. Common", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questionary.Resources", "Questionary.Resources\Questionary.Resources.csproj", "{284EDE97-63B3-4D11-8D77-A8503748E511}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Documentation", "0. Documentation", "{1CE75BC5-AC5B-4003-B83C-4E7A9F0671AE}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		Test Task Description.pdf = Test Task Description.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
