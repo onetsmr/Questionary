@@ -13,6 +13,8 @@
             public const string AllowedValuesValidator = "Недопустимое значение. Возможные значения:";
 
             public const string DataTypeValidator = "Недопустимый тип данных или формат";
+
+            public const string ProfileCreateDate = "Анкета заполнена:";
         }
 
         public class MainScreen

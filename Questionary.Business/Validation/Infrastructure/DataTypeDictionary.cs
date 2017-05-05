@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Questionary.Domain.Enums;
 
-namespace Questionary.Business.Fields.Validators.Infrastructure
+namespace Questionary.Business.Validation.Infrastructure
 {
     public static class DataTypeDictionary
     {

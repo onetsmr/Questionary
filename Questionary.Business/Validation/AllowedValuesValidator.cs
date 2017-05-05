@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using Questionary.Business.Fields.Validators.Infrastructure;
+using Questionary.Business.Validation.Infrastructure;
 using Questionary.Resources;
 using Questionary.Utils;
 
-namespace Questionary.Business.Fields.Validators
+namespace Questionary.Business.Validation
 {
     public class AllowedValuesValidator : FieldValidator
     {

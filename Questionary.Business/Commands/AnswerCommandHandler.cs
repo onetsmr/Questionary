@@ -1,5 +1,5 @@
 ﻿using Questionary.Business.Commands.Infrastructure;
-using Questionary.Business.Fields.Validators.Infrastructure;
+using Questionary.Business.Validation.Infrastructure;
 using Questionary.Domain;
 using Questionary.Domain.Enums;
 using Questionary.Utils;

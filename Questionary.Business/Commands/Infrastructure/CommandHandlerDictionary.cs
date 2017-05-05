@@ -11,6 +11,7 @@ namespace Questionary.Business.Commands.Infrastructure
             { CommandTypeEnum.GoToMainScreen, typeof(GoToMainScreenCommandHandler) },
             { CommandTypeEnum.Answer, typeof(AnswerCommandHandler) },
             { CommandTypeEnum.new_profile, typeof(NewProfileCommandHandler) },
+            { CommandTypeEnum.save, typeof(SaveCommandHandler) },
             { CommandTypeEnum.help, typeof(HelpCommandHandler) },
             { CommandTypeEnum.exit, typeof(ExitCommandHandler) }
         };

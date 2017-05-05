@@ -31,9 +31,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\AnswerCommandHandler.cs" />
+    <Compile Include="Commands\SaveCommandHandler.cs" />
     <Compile Include="Commands\GoToMainScreenCommandHandler.cs" />
     <Compile Include="Commands\ExitCommandHandler.cs" />
     <Compile Include="Commands\Infrastructure\CommandHandlerDictionary.cs" />
@@ -44,13 +46,16 @@
     <Compile Include="Commands\Infrastructure\CommandExecutionResult.cs" />
     <Compile Include="Commands\Infrastructure\CommandHandler.cs" />
     <Compile Include="Commands\Infrastructure\CommandHandlerFactory.cs" />
-    <Compile Include="Fields\Validators\DataTypeValidator.cs" />
-    <Compile Include="Fields\Validators\Infrastructure\DataTypeDictionary.cs" />
-    <Compile Include="Fields\Validators\Infrastructure\FieldValidator.cs" />
-    <Compile Include="Fields\Validators\Infrastructure\FieldValidatorFactory.cs" />
-    <Compile Include="Fields\Validators\Infrastructure\FieldValidatorResult.cs" />
-    <Compile Include="Fields\Validators\AllowedValuesValidator.cs" />
-    <Compile Include="Fields\Validators\RequiredValidator.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="PrintForms\DefaultPrintForm.cs" />
+    <Compile Include="PrintForms\Infrastructure\PrintForm.cs" />
+    <Compile Include="Validation\DataTypeValidator.cs" />
+    <Compile Include="Validation\Infrastructure\DataTypeDictionary.cs" />
+    <Compile Include="Validation\Infrastructure\FieldValidator.cs" />
+    <Compile Include="Validation\Infrastructure\FieldValidatorFactory.cs" />
+    <Compile Include="Validation\Infrastructure\FieldValidatorResult.cs" />
+    <Compile Include="Validation\AllowedValuesValidator.cs" />
+    <Compile Include="Validation\RequiredValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Domain\QuestionFormExtensions.cs" />
     <Compile Include="Domain\QuestionFormFactory.cs" />
@@ -58,6 +63,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\Questionary.Data\Questionary.Data.csproj">
+      <Project>{881FBD19-F3B1-486C-9083-EEBA65414377}</Project>
+      <Name>Questionary.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Questionary.Domain\Questionary.Domain.csproj">
       <Project>{76020e64-1b23-4253-b60a-f943077b2bf7}</Project>
       <Name>Questionary.Domain</Name>

@@ -2,7 +2,7 @@
 using Questionary.Domain.Interfaces;
 using Questionary.Utils;
 
-namespace Questionary.Business.Fields.Validators.Infrastructure
+namespace Questionary.Business.Validation.Infrastructure
 {
     public static class FieldValidatorFactory
     {

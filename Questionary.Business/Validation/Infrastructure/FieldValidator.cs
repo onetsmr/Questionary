@@ -1,4 +1,4 @@
-﻿namespace Questionary.Business.Fields.Validators.Infrastructure
+﻿namespace Questionary.Business.Validation.Infrastructure
 {
     public abstract class FieldValidator
     {

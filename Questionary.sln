@@ -27,6 +27,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Documentation", "0. Docu
 		Test Task Description.pdf = Test Task Description.pdf
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Data Layer", "3. Data Layer", "{9778365C-02E2-4E5A-B836-FD3788850F0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questionary.Data", "Questionary.Data\Questionary.Data.csproj", "{881FBD19-F3B1-486C-9083-EEBA65414377}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,10 @@ Global
 		{284EDE97-63B3-4D11-8D77-A8503748E511}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{284EDE97-63B3-4D11-8D77-A8503748E511}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{284EDE97-63B3-4D11-8D77-A8503748E511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{881FBD19-F3B1-486C-9083-EEBA65414377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{881FBD19-F3B1-486C-9083-EEBA65414377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{881FBD19-F3B1-486C-9083-EEBA65414377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{881FBD19-F3B1-486C-9083-EEBA65414377}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,5 +76,6 @@ Global
 		{2AA3D290-EF4B-42ED-841E-E1C4199DB41F} = {43AA4C53-23F2-44ED-B498-53B1C4FFF41C}
 		{FF7D6B2E-D163-4057-BC02-DFF036627842} = {0345BC71-9532-4493-B7ED-968A66B6A6EB}
 		{284EDE97-63B3-4D11-8D77-A8503748E511} = {0345BC71-9532-4493-B7ED-968A66B6A6EB}
+		{881FBD19-F3B1-486C-9083-EEBA65414377} = {9778365C-02E2-4E5A-B836-FD3788850F0C}
 	EndGlobalSection
 EndGlobal
