@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Questionary.Business.Commands.Infrastructure;
 using Questionary.Domain.Enums;
 using Questionary.Utils;
@@ -14,7 +15,7 @@ namespace Questionary.UI.Screens.Infrastructure
         protected Screen(IScreenRender screenRender, CommandModel model)
         {
             ScreenRender = screenRender;
-            AllowedCommands = new Dictionary<CommandTypeEnum, CommandTypeEnum>();
+            AllowedCommands = GetAllowedCommands().ToDictionary(e => e, e => e);
             Model = model;
         }
 
@@ -39,6 +40,8 @@ namespace Questionary.UI.Screens.Infrastructure
         }
 
         public abstract ScreenTypeEnum ScreenType { get; }
+
+        protected abstract CommandTypeEnum[] GetAllowedCommands();
 
         public abstract void Render();
     }

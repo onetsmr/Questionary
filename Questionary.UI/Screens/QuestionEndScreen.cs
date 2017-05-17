@@ -10,10 +10,17 @@ namespace Questionary.UI.Screens
         public QuestionEndScreen(IScreenRender screenRender, CommandModel model)
             : base(screenRender, model)
         {
-            AllowedCommands.Add(CommandTypeEnum.save, CommandTypeEnum.save);
         }
 
         public override ScreenTypeEnum ScreenType => ScreenTypeEnum.QuestionLast;
+
+        protected override CommandTypeEnum[] GetAllowedCommands()
+        {
+            return new[]
+            {
+                CommandTypeEnum.save
+            };
+        }
 
         public override void Render()
         {

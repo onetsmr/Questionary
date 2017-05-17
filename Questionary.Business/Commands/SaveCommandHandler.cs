@@ -21,7 +21,7 @@ namespace Questionary.Business.Commands
         {
             var question = model.Data.As<Question>();
 
-            _db.QuestionForms.Add(question.QuestionForm);
+            _db.Entities.Add(question.QuestionForm);
             _db.SaveChanges();
 
             var printForm = DefaultPrintForm.Print(question.QuestionForm);

@@ -10,12 +10,19 @@ namespace Questionary.UI.Screens
         public MainScreen(IScreenRender screenRender, CommandModel model)
             : base(screenRender, model)
         {
-            AllowedCommands.Add(CommandTypeEnum.new_profile, CommandTypeEnum.new_profile);
-            AllowedCommands.Add(CommandTypeEnum.help, CommandTypeEnum.help);
-            AllowedCommands.Add(CommandTypeEnum.exit, CommandTypeEnum.exit);
         }
 
         public override ScreenTypeEnum ScreenType => ScreenTypeEnum.Main;
+
+        protected override CommandTypeEnum[] GetAllowedCommands()
+        {
+            return new[]
+            {
+                CommandTypeEnum.new_profile,
+                CommandTypeEnum.help,
+                CommandTypeEnum.exit
+            };
+        }
 
         public override void Render()
         {

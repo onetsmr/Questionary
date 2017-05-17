@@ -12,7 +12,14 @@ namespace Questionary.UI.Screens
         protected QuestionScreenBase(IScreenRender screenRender, CommandModel model)
             : base(screenRender, model)
         {
-            AllowedCommands.Add(CommandTypeEnum.Answer, CommandTypeEnum.Answer);
+        }
+
+        protected override CommandTypeEnum[] GetAllowedCommands()
+        {
+            return new[]
+            {
+                CommandTypeEnum.Answer
+            };
         }
 
         public override void Render()
